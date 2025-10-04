@@ -25,7 +25,7 @@ function Header() {
       </div>
 
       <div
-        className={`fixed top-0 right-24 w-screen h-screen   flex flex-col justify-center items-center gap-6 transition-all duration-500 ${
+        className={`fixed top-0 right-24 w-screen h-screen bg-gray-900 z-30  flex flex-col justify-center items-center gap-6 transition-all duration-500 ${
           isClick ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
@@ -49,7 +49,7 @@ function Header() {
           <div className="absolute inset-0 bg-[url('/img/back.jpg')] bg-cover bg-center"></div>
           <div className="relative z-10 flex flex-col items-start p-10 gap-6">
             {/* لوگو */}
-            <div className="logo flex items-center gap-4">
+            <div className="logo flex flex-row-reverse  items-center gap-4">
               <div className="w-16 h-16 relative">
                 <Image
                   src="/img/favicon.png"
@@ -81,26 +81,37 @@ function Header() {
 
             {/* لوگوهای دیده‌شده در */}
             <div>
-              <p className="text-white text-center mt-4">دیده می‌شود در</p>
+              <p className="text-white text-center text-xl mt-4">
+                دیده می‌شود در
+              </p>
               <div className="flex items-center gap-14 mt-3">
                 <Image
                   src="/img/logo-bbc.png"
                   width={50}
                   height={50}
                   alt="BBC"
+                  className="w-28"
                 />
-                <Image src="/img/logo-bi.png" width={50} height={50} alt="BI" />
+                <Image
+                  src="/img/logo-bi.png"
+                  width={50}
+                  height={50}
+                  alt="BI"
+                  className="w-24"
+                />
                 <Image
                   src="/img/logo-forbes.png"
                   width={50}
                   height={50}
                   alt="Forbes"
+                  className="w-30"
                 />
                 <Image
                   src="/img/logo-techcrunch.png"
                   width={50}
                   height={50}
                   alt="TechCrunch"
+                  className="w-36"
                 />
               </div>
             </div>
