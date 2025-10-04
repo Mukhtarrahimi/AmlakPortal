@@ -12,20 +12,20 @@ function Header() {
 
   return (
     <div className="header relative w-full">
-      <div className="navbar h-screen w-24 bg-yellow-500 flex items-start justify-center fixed top-0 right-0 z-50">
+      <div className="navbar fixed w-full md:h-screen md:w-24 bg-yellow-500 flex  items-center p-3 md:items-start md:justify-center  top-0 md:right-0 z-50">
         <button
           onClick={toggleBtn}
-          className="mt-6 p-2 border-2 rounded-lg border-gray-900 hover:bg-yellow-600 transition"
+          className="p-1 md:p-2 bg-yellow-600 rounded  border-gray-900 hover:rounded hover:bg-yellow-700 transition"
         >
           <FontAwesomeIcon
             icon={isClick ? faTimes : faBars}
-            className="text-gray-900 text-2xl"
+            className="text-gray-900 text-xl md:text-2xl"
           />
         </button>
       </div>
 
       <div
-        className={`fixed top-0 right-24 w-screen h-screen bg-gray-900 z-30  flex flex-col justify-center items-center gap-6 transition-all duration-500 ${
+        className={`fixed top-0  md:right-24 w-screen h-screen bg-gray-900 z-30  flex flex-col justify-center items-center gap-6 transition-all duration-500 ${
           isClick ? 'opacity-100 visible' : 'opacity-0 invisible'
         }`}
       >
@@ -44,12 +44,12 @@ function Header() {
       </div>
 
       {/* بخش اصلی Header */}
-      <div className="w-full h-[26rem] flex relative">
-        <div className="right pr-40 w-[70%] relative flex flex-col justify-center">
+      <div className="w-full h-[26rem] flex-col md:flex relative">
+        <div className="right md:pr-40 w-full md:w-[70%] relative flex flex-col items-center justify-center">
           <div className="absolute inset-0 bg-[url('/img/back.jpg')] bg-cover bg-center"></div>
           <div className="relative z-10 flex flex-col items-start p-10 gap-6">
             {/* لوگو */}
-            <div className="logo flex flex-row-reverse  items-center gap-4">
+            <div className="logo flex  flex-row-reverse mt-6  items-center gap-4">
               <div className="w-16 h-16 relative">
                 <Image
                   src="/img/favicon.png"
@@ -58,15 +58,15 @@ function Header() {
                   className="rounded-full object-cover"
                 />
               </div>
-              <p className="text-yellow-500 text-3xl uppercase font-bold">
+              <p className="text-yellow-500 text-2xl md:text-3xl uppercase font-bold">
                 Rahimi
               </p>
             </div>
 
             {/* عنوان */}
             <div className="title text-white">
-              <p className="text-2xl">خانه خودتان:</p>
-              <p className="text-3xl font-semibold mt-2">
+              <p className=" text-xl md:text-2xl">خانه خودتان:</p>
+              <p className=" text-xl md:text-3xl font-semibold mt-2">
                 با خرید خانه نهایت آزادی را احساس کنید
               </p>
             </div>
@@ -82,9 +82,9 @@ function Header() {
             {/* لوگوهای دیده‌شده در */}
             <div>
               <p className="text-white text-center text-xl mt-4">
-                دیده می‌شود در
+                دیده میشود در
               </p>
-              <div className="flex items-center gap-14 mt-3">
+              <div className="flex items-center gap-14 mt-6">
                 <Image
                   src="/img/logo-bbc.png"
                   width={50}
