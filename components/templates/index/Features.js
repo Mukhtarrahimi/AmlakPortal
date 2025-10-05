@@ -12,8 +12,8 @@ import {
 
 function Features() {
   return (
-    <div className="features bg-gray-400 w-full h-screen p-8">
-      <div className="feature flex flex-col">
+    <div className="features  w-full  p-8">
+      <div className="feature grid grid-cols-1 md:grid-cols-3 md:flex-row  gap-y-10 md:p-10 md:pr-24 ">
         {[
           {
             icon: faGlobe,
@@ -46,10 +46,16 @@ function Features() {
             info: 'نکته بعدی در مورد متن ساختگی لورم ایپسوم این است که بعضی از طراحان وبسایت و گرافیست کاران بعد از آنکه قالب و محتوای مورد نظرشون را ایجاد کردند',
           },
         ].map((fea) => (
-          <li key={fea.title} className="list-none flex justify-center">
-            <FontAwesomeIcon icon={fea.icon} className="" />
+          <li
+            key={fea.title}
+            className="list-none flex items-start gap-2 md:gap-3 md:p-4"
+          >
+            <FontAwesomeIcon
+              icon={fea.icon}
+              className="text-3xl text-yellow-600 md:text-5xl"
+            />
             <div>
-              <h2>{fea.title}</h2>
+              <h2 className="font-semibold mb-2">{fea.title}</h2>
               <p>{fea.info}</p>
             </div>
           </li>
