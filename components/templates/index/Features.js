@@ -12,36 +12,36 @@ import {
 
 function Features() {
   return (
-    <div className="features">
+    <div className="features bg-gray-400">
       <div className="feature">
         {[
           {
-            icon: 'faGlobe',
+            icon: faGlobe,
             title: 'بهترین خانه های لوکس جهان',
             info: '',
           },
           {
-            icon: 'faMapMarker',
+            icon: faBarChart,
             title: 'همه خانه ها در مکان های برتر',
             info: '',
           },
           {
-            icon: 'faKey',
+            icon: faKey,
             title: 'خانه جدید در یک هفته',
             info: '',
           },
           {
-            icon: 'faLock',
+            icon: faLock,
             title: 'پرداخت های ایمن در بعدی',
             info: '',
           },
           {
-            icon: 'faTrophy',
+            icon: faTrophy,
             title: 'فقط بهترین خواص',
             info: '',
           },
           {
-            icon: 'faMapMarker',
+            icon: faMapMarker,
             title: '1% مشاوران املاک برتر',
             info: '',
           },
