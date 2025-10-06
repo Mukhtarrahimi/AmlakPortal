@@ -35,7 +35,7 @@ function Story() {
           طراحی گرافیکی و یا صنعت چاپ استفاده میشود. طراحان وب و گرافیک از این
           متن برای پرکردن
         </p>
-        <button className="bg-yellow-500 px-3 py-2 rounded-lg mt-3">
+        <button className="bg-yellow-500 px-3 py-2 md:px-6 md:py-3.5 rounded-lg md:rounded-xl mt-3">
           <Link href="/" />
           خانه خود را پیدا کنید
         </button>
