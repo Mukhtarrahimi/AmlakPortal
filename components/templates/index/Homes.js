@@ -1,12 +1,13 @@
 import React from 'react';
-import datas from './../../../data/db.json';
-import Home from '@/components/modules/Home';
-
+import db from './../../../data/db.json';
+import Image from 'next/image';
 function Homes() {
   return (
     <div>
-      {datas.map((data) => (
-        <Home key={data.id} {...homes} />
+      {db.map((home) => (
+        <div className="home">
+          <Image />
+        </div>
       ))}
     </div>
   );
