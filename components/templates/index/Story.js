@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 function Story() {
   return (
-    <div className="story my-8 md:flex gap-6 items-center justify-center">
+    <div className="story my-8 md:flex gap-10 items-center justify-center">
       <div className="relative right w-full md:w-[60%]">
         <Image
           src="/img/back.jpg"
@@ -14,15 +14,15 @@ function Story() {
         />
         <Image
           src="/img/story-1.jpeg"
-          width={300}
-          height={300}
-          className="absolute top-12 right-20"
+          width={400}
+          height={400}
+          className="absolute w-64 md:w-96 top-16 md:top-24 right-20 md:right-48"
         />
         <Image
           src="/img/story-2.jpeg"
-          width={200}
-          height={200}
-          className="absolute top-3 right-6"
+          width={250}
+          height={250}
+          className="absolute w-44 md:w-64 top-3 md:top-8 right-6 md:right-[33rem]"
         />
       </div>
       <div className="left w-full md:w-[40%] p-4">
