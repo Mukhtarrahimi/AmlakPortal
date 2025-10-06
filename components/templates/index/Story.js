@@ -25,15 +25,17 @@ function Story() {
           className="absolute top-3 right-6"
         />
       </div>
-      <div className="left w-full md:w-[40%]">
-        <p>مشتریان خوشحال</p>
-        <h2>”بهترین تصمیم زندگی ما“</h2>
+      <div className="left w-full md:w-[40%] p-4">
+        <p className="text-yellow-600">مشتریان خوشحال</p>
+        <h2 className="text-yellow-700 text-3xl font-semibold pt-3 pb-2">
+          ”بهترین تصمیم زندگی ما“
+        </h2>
         <p>
           متنی ساختگی و بدون معنی است که برای امتحان فونت و یا پر کردن فضا در یک
           طراحی گرافیکی و یا صنعت چاپ استفاده میشود. طراحان وب و گرافیک از این
           متن برای پرکردن
         </p>
-        <button>
+        <button className="bg-yellow-500 px-3 py-2 rounded-lg mt-3">
           <Link href="/" />
           خانه خود را پیدا کنید
         </button>
