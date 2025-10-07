@@ -17,7 +17,7 @@ function Homes() {
             <p>قیمت {home.prce}</p>
           </div>
           <button>
-            <Link href={`/`}></Link>
+            <Link href={`/`}>جزئیات خانه</Link>
           </button>
         </div>
       ))}
