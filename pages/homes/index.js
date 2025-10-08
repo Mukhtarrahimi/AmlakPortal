@@ -4,11 +4,13 @@ import db from './../../data/db.json';
 import Home from '@/components/modules/Home';
 function index() {
   // search
-  // const [search, setSearch] = useState('');
-  // useEffect(() => {
-  //   const newHomes = db.homes.filter((home) => home.title.includes(search));
-  //   setSearch(newHomes);
-  // }, [search]);
+  const [search, setSearch] = useState('');
+  useEffect(() => {
+    const newHomes = db.homes.filter((home) =>
+      home.title.toLowerCase().includes(search.toLowerCase())
+    );
+    setSearch(newHomes);
+  }, [search]);
   // sort
   const [sort, setSort] = useState('');
   const [homes, setHomes] = useState([...db.homes]);
