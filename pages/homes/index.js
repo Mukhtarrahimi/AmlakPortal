@@ -63,7 +63,7 @@ function index() {
         </div>
         <div className="search ">
           <input
-            onClick={(e) => setSearch(e.target.value)}
+            onChange={(e) => setSearch(e.target.value)}
             type="text"
             placeholder="جستجتو..."
             className="border px-2 py-1"
