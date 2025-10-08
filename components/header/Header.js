@@ -73,7 +73,7 @@ function Header() {
 
             {/* دکمه */}
             <Link
-              href="/"
+              href="/homes"
               className=" px-4 py-2 mt-3 md:mt-6 md:px-5 md:py-3 bg-yellow-500 hover:bg-yellow-600 duration-500 rounded-lg inline-block"
             >
               املاک ما را مشاهده کنید
