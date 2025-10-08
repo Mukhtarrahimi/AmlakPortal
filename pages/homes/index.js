@@ -6,10 +6,10 @@ function index() {
   // search
   const [search, setSearch] = useState('');
   useEffect(() => {
-    const newHomes = db.homes.filter((home) =>
+    const filterdHome = db.homes.filter((home) =>
       home.title.toLowerCase().includes(search.toLowerCase())
     );
-    setSearch(newHomes);
+    setSearch(filterdHome);
   }, [search]);
   // sort
   const [sort, setSort] = useState('');
