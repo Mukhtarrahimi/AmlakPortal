@@ -1,89 +1,86 @@
 import React, { useEffect, useState } from 'react';
-import Link from 'next/link';
-import db from './../../data/db.json';
 import Home from '@/components/modules/Home';
-function index() {
-  // search
+import db from './../../data/db.json';
+
+function Index() {
+  const [homes, setHomes] = useState([...db.homes]);
+  const [sort, setSort] = useState('');
   const [search, setSearch] = useState('');
+
+  // جستجو
   useEffect(() => {
-    const filterdHome = db.homes.filter((home) =>
+    const filtered = db.homes.filter((home) =>
       home.title.toLowerCase().includes(search.toLowerCase())
     );
-    setSearch(filterdHome);
+    setHomes(filtered);
   }, [search]);
-  // sort
-  const [sort, setSort] = useState('');
-  const [homes, setHomes] = useState([...db.homes]);
+
+  // مرتب‌سازی
   useEffect(() => {
+    let sortedHomes = [...db.homes];
     switch (sort) {
-      case 'price': {
-        const newHomes = [...homes].sort((a, b) => a.price - b.price);
-        setHomes(newHomes);
+      case 'price':
+        sortedHomes.sort((a, b) => a.price - b.price);
         break;
-      }
-      case 'roomCount': {
-        const newHomes = [...homes].sort((a, b) => a.roomCount - b.roomCount);
-        setHomes(newHomes);
+      case 'roomCount':
+        sortedHomes.sort((a, b) => a.roomCount - b.roomCount);
         break;
-      }
-      case 'meterage': {
-        const newHomes = [...homes].sort((a, b) => a.meterage - b.meterage);
-        setHomes(newHomes);
+      case 'meterage':
+        sortedHomes.sort((a, b) => a.meterage - b.meterage);
         break;
-      }
-      default: {
-        setHomes([...db.homes]);
-      }
+      default:
+        break;
     }
+    setHomes(sortedHomes);
   }, [sort]);
 
-  // paginate
-  const [paginate, setPaginate] = useState(1);
+  // صفحه‌بندی
   const paginateHandler = (event, page) => {
     event.preventDefault();
     const endIndex = 3 * page;
     const startIndex = endIndex - 3;
-    const paginatedHomes = db.homes.slice(startIndex, endIndex);
-    setPaginate(paginatedHomes);
+    const newHomes = db.homes.slice(startIndex, endIndex);
+    setHomes(newHomes);
   };
 
   return (
     <div className="w-full md:pr-24 md:pl-8">
       <div className="header flex justify-between px-4 pt-10 pb-30">
-        <div className="fitler ">
+        <div className="filter">
           <select
-            defaultValue={sort}
+            value={sort}
             onChange={(e) => setSort(e.target.value)}
-            name="انتخاب کنید"
-            id=""
             className="border px-2 py-1"
           >
-            <option value="price">بر اساس قیمت </option>
-            <option value="roomCount">بر اساس تعداد اطاق ها</option>
-            <option value="meterage">بر اساس اندازه</option>
+            <option value="">مرتب‌سازی...</option>
+            <option value="price">بر اساس قیمت</option>
+            <option value="roomCount">بر اساس تعداد اتاق‌ها</option>
+            <option value="meterage">بر اساس متراژ</option>
           </select>
         </div>
-        <div className="search ">
+        <div className="search">
           <input
             onChange={(e) => setSearch(e.target.value)}
             type="text"
-            placeholder="جستجتو..."
+            placeholder="جستجو..."
             className="border px-2 py-1"
           />
         </div>
       </div>
-      <div className="w-full   grid md:grid-cols-3 gap-6 ">
-        {db.homes.map((home) => (
+
+      <div className="w-full grid md:grid-cols-3 gap-6">
+        {homes.map((home) => (
           <Home key={home.id} {...home} />
         ))}
       </div>
+
       <div className="paginate flex items-center justify-center gap-4 pb-8 pt-2">
         {Array.from({ length: Math.ceil(db.homes.length / 3) }).map(
-          (item, index) => (
+          (_, index) => (
             <li
               key={index + 1}
               onClick={(event) => paginateHandler(event, index + 1)}
-              className="bg-yellow-500 list-none w-8 h-8 rounded-full flex items-center justify-center text-lg"
+              className="bg-yellow-500 list-none w-8 h-8 rounded-full flex items-center justify-center text-lg cursor-pointer"
             >
               <a href="#">{index + 1}</a>
             </li>
@@ -94,4 +91,4 @@ function index() {
   );
 }
 
-export default index;
+export default Index;
