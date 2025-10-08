@@ -73,7 +73,7 @@ function index() {
         </div>
       </div>
       <div className="w-full   grid md:grid-cols-3 gap-6 ">
-        {db.homes.slice(0, 3).map((home) => (
+        {db.homes.map((home) => (
           <Home key={home.id} {...home} />
         ))}
       </div>
