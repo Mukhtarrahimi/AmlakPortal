@@ -41,8 +41,8 @@ function index() {
     event.preventDefault();
     const endIndex = 3 * page;
     const startIndex = endIndex - 3;
-    const paginate = db.homes.slice(startIndex, endIndex);
-    setPaginate(paginate);
+    const paginatedHomes = db.homes.slice(startIndex, endIndex);
+    setPaginate(paginatedHomes);
   };
 
   return (
