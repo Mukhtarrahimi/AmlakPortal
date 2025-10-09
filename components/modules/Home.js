@@ -1,7 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 
-function Home({ img, title, price, roomCount }) {
+function Home({ id, img, title, price, roomCount }) {
   return (
     <div className="">
       <div className="home relative overflow-hidden mx-4 my-6 bg-gray-50 rounded-lg">
@@ -16,7 +16,7 @@ function Home({ img, title, price, roomCount }) {
           </div>
           <div></div>
           <button className="bg-gray-200 mt-4 px-6 py-2 rounded-2xl">
-            <Link href={`/`}>جزئیات خانه</Link>
+            <Link href={`/homes/${id}`}>جزئیات خانه</Link>
           </button>
         </div>
       </div>
