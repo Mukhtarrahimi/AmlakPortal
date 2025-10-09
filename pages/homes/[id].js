@@ -11,14 +11,14 @@ function HomeDetails() {
 
   return (
     <div className="home-details w-full md:pr-30 md:pl-8 m-4 mt-12">
-      <div className="home-details-top flex">
+      <div className="home-details-top flex gap-4">
         <div className="home-img w-[50%] ">
           <img src={home?.img} alt="" className="w-full" />
         </div>
         <div className="home-interduce w-[50%]">
           <div className="home-title">
-            <h1>
-              <span>{home?.title}</span>
+            <h1 className="font-semibold">
+              <span className="pl-4">{home?.title}</span>
               <span>{home?.price.toLocaleString()} تومان</span>
             </h1>
             <div className="tags">
