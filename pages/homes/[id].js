@@ -39,8 +39,8 @@ function HomeDetails() {
                 <span>{home?.code}</span>
               </p>
             </div>
-            <ul className="home-review-bottom">
-              <li>
+            <ul className="home-review-bottom flex gap-2">
+              <li className="">
                 <span>نوع ملک: </span>
                 <span>{home?.title}</span>
               </li>
