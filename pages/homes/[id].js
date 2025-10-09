@@ -21,14 +21,18 @@ function HomeDetails() {
               <span className="pl-4">{home?.title}</span>
               <span>{home?.price.toLocaleString()} تومان</span>
             </h1>
-            <div className="tags">
-              <span className="tag green-tag">ویژه</span>
-              <span className="tag brown-tag">برای اجاره</span>
+            <div className="tags mt-4 mb-2">
+              <span className="tag green-tag bg-green-500 p-1 rounded text-white">
+                ویژه
+              </span>
+              <span className="tag brown-tag pr-3 bg-red-500 mr-2 p-1 rounded ">
+                برای اجاره
+              </span>
             </div>
             <div className="adrress">آدرس : شیراز، میدان ارم</div>
           </div>
           <div className="home-review">
-            <div className="home-review-top">
+            <div className="home-review-top font-semibold gap-6 flex my-4">
               <h2>مرور کلی</h2>
               <p className="">
                 <span>کد ملک : </span>
