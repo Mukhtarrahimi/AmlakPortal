@@ -5,7 +5,7 @@ function Footer() {
     <footer className="footer bg-gray-900 pt-16 pb-6 p-4 text-white">
       <ul className="nav grid grid-cols-2 md:mr-24 md:grid-cols-6 gap-6 md:gap-0 ">
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <a href="/homes" className="nav__link">
             خانه رویایی خود را پیدا کنید
           </a>
         </li>
