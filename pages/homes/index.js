@@ -73,7 +73,7 @@ function Index() {
           <Home key={home.id} {...home} />
         ))}
       </div>
-
+      {/*  */}
       <div className="paginate flex items-center justify-center gap-4 pb-8 pt-2">
         {Array.from({ length: Math.ceil(db.homes.length / 3) }).map(
           (_, index) => (
