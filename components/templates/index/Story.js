@@ -26,8 +26,8 @@ function Story() {
         />
       </div>
       <div className="left w-full md:w-[40%] p-4">
-        <p className="text-yellow-600">مشتریان خوشحال</p>
-        <h2 className="text-yellow-700 text-3xl font-semibold pt-3 pb-2">
+        <p className="text-amber-600">مشتریان خوشحال</p>
+        <h2 className="text-amber-700 text-3xl font-semibold pt-3 pb-2">
           ”بهترین تصمیم زندگی ما“
         </h2>
         <p>
@@ -35,7 +35,7 @@ function Story() {
           طراحی گرافیکی و یا صنعت چاپ استفاده میشود. طراحان وب و گرافیک از این
           متن برای پرکردن
         </p>
-        <button className="bg-yellow-500 px-3 py-2 md:px-6 md:py-3.5 font-semibold rounded-lg md:rounded-xl mt-3">
+        <button className="bg-gradient-to-br from-amber-500 to-yellow-500 px-3 py-2 md:px-6 md:py-3.5 font-semibold rounded-lg md:rounded-xl mt-3">
           <Link href="/" />
           خانه خود را پیدا کنید
         </button>

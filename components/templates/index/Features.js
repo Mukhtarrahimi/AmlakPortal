@@ -52,7 +52,7 @@ function Features() {
           >
             <FontAwesomeIcon
               icon={fea.icon}
-              className="text-3xl text-yellow-600 md:text-5xl"
+              className="text-3xl text-amber-600 md:text-5xl"
             />
             <div>
               <h2 className="font-semibold mb-2">{fea.title}</h2>
