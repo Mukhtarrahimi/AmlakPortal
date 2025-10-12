@@ -12,10 +12,10 @@ function Header() {
 
   return (
     <div className="header relative w-full">
-      <div className="navbar  fixed w-full md:h-screen md:w-24 bg-gradient-to-br from-blue-600 to-indigo-700 flex  items-center p-3 md:items-start md:justify-center  top-0 right-0 z-50">
+      <div className="navbar  fixed w-full md:h-screen md:w-24 bg-gradient-to-br from-amber-500 to-yellow-500 flex  items-center p-3 md:items-start md:justify-center  top-0 right-0 z-50">
         <button
           onClick={toggleBtn}
-          className="p-1 md:p-2 bg-gradient-to-br from-blue-600 to-indigo-700 rounded  border-gray-900 hover:rounded hover:bg-gradient-to-br from-blue-600 to-indigo-700 transition"
+          className="p-1 md:p-2 bg-gradient-to-br from-amber-600 to-yellow-600 rounded  border-gray-900 hover:rounded hover:bg-gradient-to-br from-amber-600 to-yellow-500 transition"
         >
           <FontAwesomeIcon
             icon={isClick ? faTimes : faBars}
@@ -58,7 +58,7 @@ function Header() {
                   className="rounded-full object-cover"
                 />
               </div>
-              <p className="text-yellow-500 text-2xl md:text-3xl uppercase font-bold">
+              <p className="text-amber-500 text-2xl md:text-3xl uppercase font-bold">
                 Rahimi
               </p>
             </div>
@@ -74,7 +74,7 @@ function Header() {
             {/* دکمه */}
             <Link
               href="/homes"
-              className=" px-4 py-2 mt-3 md:mt-6 md:px-5 md:py-3 bg-yellow-500 hover:bg-yellow-600 duration-500 rounded-lg inline-block"
+              className=" px-4 py-2 mt-3 md:mt-6 md:px-5 md:py-3 bg-gradient-to-br from-amber-500 to-yellow-500 hover:bg-gradient-to-br from-amber-600 to-yellow-500 duration-500 rounded-lg inline-block"
             >
               املاک ما را مشاهده کنید
             </Link>
