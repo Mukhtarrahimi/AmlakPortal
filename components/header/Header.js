@@ -12,10 +12,10 @@ function Header() {
 
   return (
     <div className="header relative w-full">
-      <div className="navbar  fixed w-full md:h-screen md:w-24 bg-yellow-500 flex  items-center p-3 md:items-start md:justify-center  top-0 right-0 z-50">
+      <div className="navbar  fixed w-full md:h-screen md:w-24 bg-gradient-to-br from-blue-600 to-indigo-700 flex  items-center p-3 md:items-start md:justify-center  top-0 right-0 z-50">
         <button
           onClick={toggleBtn}
-          className="p-1 md:p-2 bg-yellow-600 rounded  border-gray-900 hover:rounded hover:bg-yellow-700 transition"
+          className="p-1 md:p-2 bg-gradient-to-br from-blue-600 to-indigo-700 rounded  border-gray-900 hover:rounded hover:bg-gradient-to-br from-blue-600 to-indigo-700 transition"
         >
           <FontAwesomeIcon
             icon={isClick ? faTimes : faBars}
@@ -34,7 +34,7 @@ function Header() {
             (item) => (
               <li
                 key={item}
-                className="bg-yellow-500 w-40 h-12 flex items-center justify-center hover:bg-yellow-600 duration-300 rounded-lg text-white text-lg font-heading shadow-lg"
+                className="bg-gradient-to-br from-amber-500 to-yellow-500 w-40 h-12 flex items-center justify-center hover:bg-gradient-to-br from-amber-600 to-yellow-500 duration-300 rounded-lg text-white text-lg font-heading shadow-lg"
               >
                 <Link href="/">{item}</Link>
               </li>
