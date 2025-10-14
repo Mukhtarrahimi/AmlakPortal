@@ -13,10 +13,10 @@ function about() {
         </div>
 
         <div class="order-2 md:order-1 space-y-6">
-          <h2 class="text-4xl font-bold text-blue-700">درباره املاک رویال</h2>
+          <h2 class="text-4xl font-bold text-amber-600">درباره املاک رویال</h2>
           <p class="text-gray-700 leading-relaxed">
-            شرکت املاک <span class="font-semibold text-blue-600">رویال</span> با
-            بیش از یک دهه تجربه در زمینه خرید، فروش و اجاره ملک، با هدف ارائه
+            شرکت املاک <span class="font-semibold text-amber-600">رویال</span>{' '}
+            با بیش از یک دهه تجربه در زمینه خرید، فروش و اجاره ملک، با هدف ارائه
             خدمات حرفه‌ای و شفاف به مشتریان تأسیس شده است. ما باور داریم که خانه
             فقط یک ساختمان نیست؛ بلکه جایی است که زندگی در آن معنا پیدا می‌کند.
           </p>
@@ -29,15 +29,15 @@ function about() {
 
           <div class="grid grid-cols-3 gap-6 pt-4">
             <div class="text-center">
-              <h3 class="text-3xl font-bold text-blue-700">10+</h3>
+              <h3 class="text-3xl font-bold text-amber-700">10+</h3>
               <p class="text-sm text-gray-500">سال تجربه</p>
             </div>
             <div class="text-center">
-              <h3 class="text-3xl font-bold text-blue-700">250+</h3>
+              <h3 class="text-3xl font-bold text-amber-700">250+</h3>
               <p class="text-sm text-gray-500">پروژه انجام شده</p>
             </div>
             <div class="text-center">
-              <h3 class="text-3xl font-bold text-blue-700">1000+</h3>
+              <h3 class="text-3xl font-bold text-amber-600">1000+</h3>
               <p class="text-sm text-gray-500">مشتری راضی</p>
             </div>
           </div>
@@ -45,7 +45,7 @@ function about() {
           <div class="pt-6">
             <a
               href="#contact"
-              class="inline-block bg-blue-600 text-white py-3 px-6 rounded-lg shadow hover:bg-blue-700 transition"
+              class="inline-block bg-amber-600 text-white py-3 px-6 rounded-lg shadow hover:bg-amber-700 transition"
             >
               ارتباط با ما
             </a>
