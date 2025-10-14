@@ -50,7 +50,7 @@ function Index() {
           <select
             value={sort}
             onChange={(e) => setSort(e.target.value)}
-            className="border px-2 py-1"
+            className="border border-gray-300 p-2 md:p-3 focus:outline-none foucs:ring-2 focus:ring-amber-500 rounded-lg "
           >
             <option value="">مرتب‌سازی...</option>
             <option value="price">بر اساس قیمت</option>
@@ -63,7 +63,7 @@ function Index() {
             onChange={(e) => setSearch(e.target.value)}
             type="text"
             placeholder="جستجو..."
-            className="border border-gray-300 focus:outline-none focus:ring-2 p-3 rounded-lg focus:ring-amber-500 "
+            className="border border-gray-300 p-2 focus:outline-none focus:ring-2 md:p-3 rounded-lg focus:ring-amber-500 "
           />
         </div>
       </div>
