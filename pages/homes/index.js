@@ -63,7 +63,7 @@ function Index() {
             onChange={(e) => setSearch(e.target.value)}
             type="text"
             placeholder="جستجو..."
-            className="border px-2 py-1"
+            className="border border-gray-300 focus:outline-none focus:ring-2 p-3 rounded-lg focus:ring-amber-500 "
           />
         </div>
       </div>
