@@ -61,7 +61,7 @@ function Contact() {
 
                 <button
                   type="submit"
-                  class="w-full bg-gradient-to-br from-amber-500 to-yellow-500 text-white py-3 rounded-lg font-semibold hover:bg-gradient-to-br from-amber-600 to-yellow-500 transition"
+                  class="w-full bg-gradient-to-br from-amber-500 to-yellow-500 text-white py-3 rounded-lg font-semibold hover:bg-gradient-to-br from-amber-600 to-yellow-500 transition cursor-pointer"
                 >
                   ارسال پیام
                 </button>
