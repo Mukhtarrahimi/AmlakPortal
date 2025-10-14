@@ -44,7 +44,7 @@ function about() {
 
           <div class="pt-6">
             <a
-              href="#contact"
+              href="/contact"
               class="inline-block bg-amber-600 text-white py-3 px-6 rounded-lg shadow hover:bg-amber-700 transition"
             >
               ارتباط با ما
