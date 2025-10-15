@@ -28,8 +28,8 @@ function Header() {
       </div>
 
       <div
-        className={`fixed top-0  md:right-24 w-screen h-screen bg-gray-900 z-30  flex  justify-center items-center gap-6 transition-all duration-500 ${
-          isClick ? 'opacity-100 visible' : 'opacity-0 invisible'
+        className={`fixed top-0 md:right-24 w-screen h-screen bg-gray-900 z-30 flex justify-center items-center gap-6 transform transition-all duration-500 ${
+          isClick ? 'translate-x-0 opacity-100' : 'translate-x-full opacity-0'
         }`}
       >
         <ul className="flex flex-col justify-center items-center gap-6">
