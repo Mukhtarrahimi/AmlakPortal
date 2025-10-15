@@ -45,7 +45,7 @@ function Header() {
 
       {/* بخش اصلی Header */}
       <div className="relative flex flex-col md:flex-row">
-        <div className="right md:pr-30   w-full md:w-[70%] relative flex flex-col md:flex-row items-center justify-center">
+        <div className="right md:pr-30 bg-gray-900   w-full md:w-[70%] relative flex flex-col md:flex-row items-center justify-center">
           <div className="absolute -z-10 inset-0 bg-[url('/img/back.jpg')] bg-cover bg-center"></div>
           <div className="relative w-full z-10 flex flex-col items-center md:items-start p-10 mt:gap-6">
             {/* لوگو */}
@@ -119,7 +119,7 @@ function Header() {
         </div>
 
         {/* سمت چپ - سه مالک برتر */}
-        <div className="left bg-gray-900 md:w-[30%] flex flex-col items-center justify-center p-6 gap-6">
+        <div className="left bg-gray-950 md:w-[30%] flex flex-col items-center justify-center p-6 gap-6">
           <p className="text-2xl text-yellow-500">سه مالک برتر</p>
           <ul className="flex flex-col  gap-6 w-full">
             {[
