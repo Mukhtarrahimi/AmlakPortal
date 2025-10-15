@@ -30,16 +30,28 @@ function Header() {
         }`}
       >
         <ul className="flex flex-col justify-center items-center gap-6">
-          {['صفحه اصلی', 'خانه ها', 'درباره ما', 'تماس با ما', 'گالری'].map(
-            (item) => (
-              <li
-                key={item}
-                className="bg-gradient-to-br from-amber-500 to-yellow-500 w-40 h-12 flex items-center justify-center hover:bg-gradient-to-br from-amber-600 to-yellow-500 duration-300 rounded-lg text-white text-lg font-heading shadow-lg"
-              >
-                <Link href="/">{item}</Link>
-              </li>
-            )
-          )}
+          {[
+            { title: 'صفحه اصلی', path: '/' },
+            {
+              title: 'خانه ها',
+              path: '/homes',
+            },
+            {
+              title: 'درباره ما',
+              path: '/about',
+            },
+            {
+              title: 'تماس با ما',
+              path: '/conatct',
+            },
+          ].map((item) => (
+            <li
+              key={item}
+              className="bg-gradient-to-br from-amber-500 to-yellow-500 w-40 h-12 flex items-center justify-center hover:bg-gradient-to-br from-amber-600 to-yellow-500 duration-300 rounded-lg text-white text-lg font-heading shadow-lg"
+            >
+              <Link href={item.path}>{item.title}</Link>
+            </li>
+          ))}
         </ul>
       </div>
 
