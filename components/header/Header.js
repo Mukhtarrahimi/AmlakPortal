@@ -9,6 +9,9 @@ function Header() {
   const toggleBtn = () => {
     setIsClick(!isClick);
   };
+  const closeMenu = () => {
+    setIsClick(!isClick);
+  };
 
   return (
     <div className="header relative w-full">
@@ -42,14 +45,16 @@ function Header() {
             },
             {
               title: 'تماس با ما',
-              path: '/conatct',
+              path: '/contact',
             },
           ].map((item) => (
             <li
               key={item}
               className="bg-gradient-to-br from-amber-500 to-yellow-500 w-40 h-12 flex items-center justify-center hover:bg-gradient-to-br from-amber-600 to-yellow-500 duration-300 rounded-lg text-white text-lg font-heading shadow-lg"
             >
-              <Link href={item.path}>{item.title}</Link>
+              <Link href={item.path} onClick={closeMenu}>
+                {item.title}
+              </Link>
             </li>
           ))}
         </ul>
