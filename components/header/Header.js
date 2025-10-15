@@ -45,7 +45,7 @@ function Header() {
 
       {/* بخش اصلی Header */}
       <div className="relative flex flex-col md:flex-row">
-        <div className="right md:pr-30  bg-gray-800 w-full md:w-[70%] relative flex flex-col md:flex-row items-center justify-center">
+        <div className="right md:pr-30  bg-gray-800 bg-opacity-60 w-full md:w-[70%] relative flex flex-col md:flex-row items-center justify-center">
           <div className="absolute -z-40 inset-0 bg-[url('/img/back.jpg')] bg-cover bg-center"></div>
           <div className="relative w-full z-10 flex flex-col items-center md:items-start p-10 mt:gap-6">
             {/* لوگو */}
