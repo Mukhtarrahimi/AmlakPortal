@@ -14,6 +14,7 @@ function Header() {
   };
 
   return (
+    // header
     <div className="header relative w-full">
       <div className="navbar  fixed w-full md:h-screen md:w-24 bg-gradient-to-br from-amber-500 to-yellow-500 flex  items-center p-3 md:items-start md:justify-center  top-0 right-0 z-50">
         <button
