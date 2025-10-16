@@ -21,11 +21,11 @@ function Contact() {
                 </p>
                 <p class="flex items-center space-x-3">
                   <span class="material-icons text-white">📞</span>
-                  <span>+93 700 123 456</span>
+                  <span>+93 787 999 084</span>
                 </p>
                 <p class="flex items-center space-x-3">
                   <span class="material-icons text-white">✉️</span>
-                  <span>info@example.com</span>
+                  <span>mukhtarrahimi.dev@gamil.com</span>
                 </p>
               </div>
             </div>
