@@ -1,6 +1,7 @@
 import '@/styles/globals.css';
 import '@/styles/fonts.css';
 import Header from '@/components/header/Header';
+import Footer from '@/components/footer/Footer';
 //  font awesome
 import '@/styles/globals.css';
 import { config } from '@fortawesome/fontawesome-svg-core';
@@ -12,6 +13,7 @@ export default function App({ Component, pageProps }) {
     <>
       <Header />
       <Component {...pageProps} />
+      <Footer />
     </>
   );
 }
