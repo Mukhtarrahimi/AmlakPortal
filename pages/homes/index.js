@@ -82,7 +82,7 @@ function Index() {
               onClick={(event) => paginateHandler(event, index + 1)}
               className="bg-yellow-500 list-none w-8 h-8 rounded-full flex items-center justify-center text-lg cursor-pointer"
             >
-              <a href="#">{index + 1}</a>
+              <a href={index + 1}>{index + 1}</a>
             </li>
           )
         )}
