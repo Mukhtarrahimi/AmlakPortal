@@ -20,7 +20,7 @@ function Footer() {
           </a>
         </li>
         <li className="nav__item">
-          <a href="#" className="nav__link">
+          <a href="/contact" className="nav__link">
             با ما تماس بگیرید
           </a>
         </li>
