@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer className="footer">
+    <footer className="footer bg-gray-900 p-4 text-white">
       <ul className="nav">
         <li className="nav__item">
           <a href="#" className="nav__link">
